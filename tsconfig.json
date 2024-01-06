@@ -1,0 +1,14 @@
+{
+  "extends": ["@tsconfig/strictest/tsconfig.json"],
+  "compilerOptions": {
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": true
+  },
+  "include": [
+    "packages/*/src",
+    "packages/*/__test__",
+    "packages/*/scripts",
+    "scripts"
+  ]
+}

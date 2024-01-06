@@ -1,0 +1,40 @@
+{
+  "name": "openapi-assisted",
+  "version": "0.0.0",
+  "description": "A collection of tools to assist in API development using OpenAPI 3.1 and above.",
+  "license": "MIT",
+  "author": {
+    "name": "Yong Quan Lim"
+  },
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf packages/*/dist .eslintcache *.tsbuildinfo",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "test": "tsc --incremental --noEmit"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@tsconfig/strictest": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-jsdoc": "^1.3.0",
+    "prettier-plugin-packagejson": "^2.4.9",
+    "prettier-plugin-sh": "^0.13.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.14.0",
+  "engines": {
+    "node": ">=20.10.0 <21",
+    "pnpm": ">=8.14.0"
+  },
+  "engineStrict": true
+}
